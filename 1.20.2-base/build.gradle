@@ -1,0 +1,18 @@
+plugins {
+    id('java')
+    id('net.neoforged.gradle.neoform') version '7.0.142'
+}
+
+platformInfo {
+    minecraftVersion = '1.20.2'
+    platform = 'Vanilla'
+    supportedMinecraftVersions = [ '1.20', '1.20.1', '1.20.2', '1.20.3', '1.20.4', '1.20.5', '1.20.6' ]
+}
+
+dependencies {
+    implementation 'net.minecraft:neoform_joined:1.20.2-20231019.002635'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.release = 17
+}

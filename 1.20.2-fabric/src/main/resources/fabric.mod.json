@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "water_spring",
+  "version": "${version}",
+  "name": "Water Spring",
+  "description": "Infinite water!",
+  "authors": [ "3TUSK" ],
+  "contact": {},
+  "license": "CC0-1.0",
+  "entrypoints": {
+    "main": [ "info.tritusk.modpack.waterspring.FabricEntryPoint" ]
+  },
+  "depends": {
+    "minecraft": "1.20.*"
+  }
+}
